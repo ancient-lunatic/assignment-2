@@ -15,7 +15,7 @@
 
 </head>
 
-<body onload="gameMove= new RockPappeSecissorGameRules();">
+<body onload="gameMove= new RockPappeSecissorGame();">
 	<div id='header'>
 
 		<h1>Let'S ThE GaMe BeGin</h1>
@@ -46,6 +46,7 @@
 		lets take a chance...
 
 	</div>
+	
 
 	<div id='move'>
 
@@ -66,6 +67,12 @@
 			<img src="scissor.png" width="100" alt=""  id = "2" onclick="gameMove.play(this.id)">
 		</div>
 	</div>
+	
+	<div id="computerMove" id>
+
+		
+
+	</div>	
 	<div id="reset">
 		<button  id= "restart" class="btn btn-success" onclick="gameMove.rematch()">restart match</button>
 	</div>

@@ -80,7 +80,13 @@ body{
 
 
 }
+  #computerMove
+  {
+	font-size: 44px;
+	color:white;
+	text-align: center;
 
+  }
 #move
 {
 	padding-top: 10px;

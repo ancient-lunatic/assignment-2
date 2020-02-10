@@ -15,6 +15,7 @@ class RockPappeSecissorGame
      
         let userChoice:number= parseInt(id)
         let computerChoice = Math.floor(Math.random()*3);
+        this.computerMove(computerChoice)
         let result = (document.getElementById('output')as HTMLDivElement)
         
         if(this.rule[userChoice][computerChoice]==='Tie')
@@ -37,6 +38,17 @@ class RockPappeSecissorGame
         this.GenerateResult();
     }
 
+    computerMove(computerChoice:number)
+    {
+        if(computerChoice===0)
+        document.getElementById("computerMove").innerText = "Computer choose Rock"
+        else if(computerChoice===1)
+        document.getElementById("computerMove").innerText = "Computer choose Paper"
+        else
+        document.getElementById("computerMove").innerText = "Computer choose scissor"
+        
+    }
+
     GenerateResult()
     {
         (document.getElementById("userPoint")as HTMLSpanElement).innerText = (this.userPoint).toString();
@@ -50,6 +62,6 @@ class RockPappeSecissorGame
         document.getElementById("output").innerHTML= "lets take a chance..."
         this.GenerateResult();  
     }
-    
+
 }
 
