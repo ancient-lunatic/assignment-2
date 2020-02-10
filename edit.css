@@ -1,0 +1,146 @@
+*{
+   
+  margin: 0;
+  padding: 0;
+		/* foo changing  the wohle */
+}
+body{
+
+	background-color: #24272E;
+}
+#header  {
+    margin:0px;
+    padding: 20px;
+    background: rgb(179, 192, 183);
+    
+
+
+}
+#header > h1 {
+  color: rgb(23, 28, 41);
+  text-decoration: underline;
+  font-family:Asap,sans-serif;
+  text-align: center;
+  
+}
+
+#header	 > h1:hover{
+	color: #24272E;	
+	transition-duration: 500ms;
+	animation: forwards;
+	font-size: 45px;
+}
+ 
+ #rectangle{
+	position: relative;
+	width: 220px;
+	/* //height: 20px; */
+	border: 3px solid white;
+	margin: 20px auto;
+	color:  white;	
+	font-size: 45px;
+	border-radius: 5px;
+ 	text-align: center;	
+ 	padding: 15px 20px;
+ }
+
+.score{
+
+	background: rgb(228, 81, 81);
+	color: white;
+	font-size: 14px;
+	padding: 2px 10px;
+	font-family: Asap,sans-serif;
+	
+}
+  
+  #userBoard
+  {
+	position: absolute;
+	top: 35%;
+	left: -25px;
+	border-radius: 4px;
+
+  }
+
+#computerBoard
+  {
+	position: absolute;
+	top: 35%;
+	right: -25px;
+	border-radius: 4px;
+
+  }
+
+ #output
+{
+	font-size: 44px;
+	color:white;
+	text-align: center;
+
+
+}
+
+#move
+{
+	padding-top: 10px;
+
+	text-align: center;
+	font-size:40px;
+	color:skyblue;
+
+}
+.choices 
+{
+    text-align: center;
+}
+	
+.rps{
+	padding-top: 20px;
+	margin:15px;
+	display:inline-block;
+}
+
+.rps > img:hover{
+		animation: shake 0.5s;
+ 		animation-iteration-count: 2s;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#reset{
+	margin:20px;
+	text-align: center;
+}
+#reset > button
+{
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition: 0.3s;
+	
+}
+#reset > button:hover {
+	background-color: #3e8e41;
+	color: white;
+  }
+
+
+
+
+
+
+
+

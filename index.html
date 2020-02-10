@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rock Paper Secissor</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" href='edit.css'>
+	<script type="text/javascript" src='function.js'></script>
+	<link rel="shortcut icon" href="https://t.pimg.jp/023/182/261/5/23182261.jpg">
+	<script src="function.js"></script>
+
+</head>
+
+<body onload="gameMove= new RockPappeSecissorGameRules();">
+	<div id='header'>
+
+		<h1>Let'S ThE GaMe BeGin</h1>
+
+	</div>
+
+	<div id='rectangle'>
+
+		<div class='score' id='userBoard'>
+			User
+		</div>
+
+		<div class='score' id='computerBoard'>
+			Com
+		</div>
+		<span id='userPoint'>
+			0
+		</span>
+		:
+		<span id='computerPoint'>
+			0
+		</span>
+
+	</div>
+
+	<div id="output">
+
+		lets take a chance...
+
+	</div>
+
+	<div id='move'>
+
+		<p>make your move</p>
+
+	</div>
+
+	<div class='choices'>
+		<div class='rps' id="rock">
+			<img src="rock.png" width="100" alt=""  id = "0" onclick="gameMove.play(this.id)">
+		</div>
+
+		<div class='rps' id="paper">
+			<img src="paper.png" width="100" alt=""  id = "1" onclick="gameMove.play(this.id)">
+		</div>
+
+		<div class='rps' id="Secissor">
+			<img src="scissor.png" width="100" alt=""  id = "2" onclick="gameMove.play(this.id)">
+		</div>
+	</div>
+	<div id="reset">
+		<button  id= "restart" class="btn btn-success" onclick="gameMove.rematch()">restart match</button>
+	</div>
+	
+
+
+</body>
+
+</html>
